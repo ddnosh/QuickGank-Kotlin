@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">QuickGank-Kotlin</string>
+
+    <string name="title">🍉</string>
+    <string name="about">🍎</string>
+    <string name="play">🍇</string>
+
+    <string-array name="subtabs">
+        <item>Android</item>
+        <item>iOS</item>
+        <item>前端</item>
+        <item>瞎推荐</item>
+        <item>推展资源</item>
+        <item>App</item>
+        <item>休息视频</item>
+    </string-array>
+</resources>

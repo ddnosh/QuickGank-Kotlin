@@ -15,6 +15,7 @@ import com.androidwind.gank.kotlin.gankabout.GankAboutActivity
 import com.androidwind.gank.kotlin.gankcatalogue.GankCatalogueFragment
 import com.androidwind.gank.kotlin.ganklist.GankListFragment
 import com.androidwind.gank.kotlin.ganksearch.GankSearchFragment
+import com.androidwind.gank.kotlin.util.toast
 import com.flyco.tablayout.listener.CustomTabEntity
 import com.flyco.tablayout.listener.OnTabSelectListener
 import com.tbruyelle.rxpermissions2.RxPermissions
@@ -46,7 +47,7 @@ class MainActivity : BaseActivity() {
         } else if (event.keyCode == KeyEvent.KEYCODE_BACK) {
             val currentTime = System.currentTimeMillis()
             if (currentTime - DOUBLE_CLICK_TIME > 2000) {
-                ToastUtil.showToast("再按一次退出")
+                toast("再按一次退出")
                 DOUBLE_CLICK_TIME = currentTime
             } else {
                 System.gc()
